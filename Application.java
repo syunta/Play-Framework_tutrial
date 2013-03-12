@@ -23,5 +23,7 @@ public class Application extends Controller {
 	public static Result deleteTask(Long id) {
 		return TODO;
 	}
+	
+	static Form<Task> taskForm = form(Task.class);
 
 }
