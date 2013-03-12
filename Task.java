@@ -11,9 +11,9 @@ public class Task {
 	public String label;
 	
 	public static List<Task> all() {
-		return new ArrayList<task>();
+		return new ArrayList<Task>();
 	}
-	
+		
 	public static void create(Task task) {
 	}
 	
