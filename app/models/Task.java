@@ -17,21 +17,11 @@ public class Task extends Model {
 	public String label;
 
 	public static Finder<Long,Task> find = new Finder(
-			Long.class,Task.class);
+			Long.class, Task.class
+			);
 
-	public static List<Task> all() {
-		return find.all();
-	}
 
-	public static void create(Task task) {
-		task.save();
-	}
-
-	public static void delete(Long id) {
-		find.ref(id).delete();
-	}
-
-	public static List<Task> all() {
+	public static List<Task>all(){
 		return find.all();
 	}
 
